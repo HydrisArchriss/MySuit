@@ -1,0 +1,11 @@
+nav {
+    a {
+        display: inline-block;
+        padding: 0 .5rem;
+        margin: .5rem 0;
+
+        &:not(:last-child) {
+            border-right: 1px solid black;
+        }
+    }
+}

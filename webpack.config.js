@@ -8,16 +8,20 @@ Encore
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
     // uncomment to create hashed filenames (e.g. app.abc123.css)
-    // .enableVersioning(Encore.isProduction())
+    .enableVersioning(Encore.isProduction())
 
     // uncomment to define the assets of the project
-    // .addEntry('js/app', './assets/js/app.js')
-    // .addStyleEntry('css/app', './assets/css/app.scss')
+    .addEntry('home', './assets/js/HomeController.js')
+    .addEntry('form', './assets/js/FormController.js')
+    .addStyleEntry('homeCss', './assets/scss/Pages/home.scss')
+    .addStyleEntry('styleCss', './assets/scss/style.scss')
 
     // uncomment if you use Sass/SCSS files
-    // .enableSassLoader()
+     .enableSassLoader()
+     .enablePostCssLoader()
 
-    // uncomment for legacy applications that require $/jQuery as a global variable
+
+// uncomment for legacy applications that require $/jQuery as a global variable
     // .autoProvidejQuery()
 ;
 

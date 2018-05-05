@@ -1,0 +1,24 @@
+@import 'Utils/color';
+@import 'Utils/vars';
+@import 'Components/header';
+@import 'Components/nav';
+@import 'Components/form';
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    main {
+        flex: 2;
+    }
+}
+
+
+

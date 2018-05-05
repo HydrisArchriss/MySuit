@@ -1,0 +1,58 @@
+@import '../Utils/color';
+@import '../Utils/vars';
+
+aside {
+    float: left;
+    height: 100%;
+    width: $width-aside;
+}
+
+section {
+    height: 100%;
+    margin-left: $margin-content;
+
+    .grid {
+        .grid-item {
+            float: left;
+            padding: .5rem;
+
+            .content {
+                background: $lightBack;
+                border-radius: 0 0 .5rem .5rem;
+                position: relative;
+
+                .title {
+                    background: $blackOpacity;
+                    box-sizing: border-box;
+                    color: $white;
+                    padding: .2rem .7rem;
+                    position: absolute;
+                    transform: translateY(-100%);
+                    width: 100%;
+
+                }
+
+                .description {
+                    padding: .5rem 1rem;
+
+                    .colors {
+                        display: inline-block;
+
+                        div {
+                            border: 1px solid $black;
+                            border-radius: 2px;
+                            display: inline-block;
+                            height: 15px;
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+
+            img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+}
