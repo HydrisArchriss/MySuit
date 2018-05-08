@@ -12,7 +12,6 @@ framework:
     session:
        handler_id: session.handler.native_file
        save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
-       cookie_domain: '%env(COOKIES_DOMAIN)%'
     fragments: ~
     http_method_override: true
     php_errors:
